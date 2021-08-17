@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body,
+    div,
+    ul,
+    li,
+    a {
+        padding: 4px;
+        margin: 8px;
+        /* 设置公共样式 */
+    }
+    
+    ul {
+        list-style: none;
+        /* 废除无序列表符号 */
+    }
+    
+    a {
+        color: #4479d1;
+        text-decoration: none;
+        /* 设置a标签中字体颜色及去除下划线 */
+    }
+    
+    a:hover {
+        color: red;
+        text-decoration: none;
+        /* 鼠标移到字体上显示红色，以及去除下划线 */
+    }
+    /* 设置盒子模型的样式 */
+    
+    .box {
+        /* 设置盒子的宽度，外边距，边框样式，最重要的是盒子背景 */
+        width: 430px;
+        margin: 30px;
+        border: 1px solid green;
+        background-image: url(./img/bg.gif);
+    }
+    
+    .box .header {
+        /* header标签的宽度高度，内外边距 */
+        width: 100%;
+        height: 28px;
+        margin: -2px;
+        padding: 6px;
+    }
+    
+    .box .header h4 {
+        /* h4标题的字体大小，高度，行高，字体粗细，颜色，外边距，以及文本的位置 */
+        font-size: 26px;
+        height: 19px;
+        line-height: 8px;
+        font-weight: 800;
+        color: #fff;
+        margin: 2px;
+        text-align: left;
+    }
+    
+    .box .header h4.t0 {
+        /* class值为t0的属性，背景图片，不重复，上内边距，左内边距，背景图片的位置 */
+        background: url(./img/tubiao.png) no-repeat;
+        padding-top: 7px;
+        padding-left: 9px;
+        background-position: -9px -2px;
+    }
+    
+    .box .content {
+        /* 内容的背景颜色，内外边距，上内边距 */
+        background-color: #fff;
+        margin: 5px;
+        padding: 9px;
+        padding-top: 0px;
+    }
+    
+    .box .content ul li.tag {
+        /* class值为tag的高度，背景图片，不重复，背景大小 */
+        height: 24px;
+        background: url(./img/tb.gif) no-repeat;
+        background-size: 19px;
+    }
+    
+    .box .content ul li.tag {
+        /* 添加下划线虚线，行高，背景图位置，字体样式等 */
+        border-bottom-style: dashed;
+        line-height: 57px;
+        background-position: 0px 23px;
+        text-align: left;
+        margin: -13px;
+        padding-left: 13px;
+        font-family: "微软雅黑", "黑体", "宋体";
+        font-size: 13px;
+        height: 40px;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <div class="header">
+            <h4 class="tag t0">新闻列表</h4>
+        </div>
+        <div class="content">
+            <ul>
+                <li class="tag t1"><a href="#">比尔盖茨退出微软董事会，20共捐出538亿元</a></li>
+
+                <li class="tag t2"><a href="#">5G改变社会 中国移动用技术创新驱动一场数字生活革命</a></li>
+
+                <li class="tag t3"><a href="#">三个唯一成就海尔26度C除菌空调的行业第一</a></li>
+
+                <li class="tag t4"><a href="#">腾讯无奈向苹果低头，阿里突然决定助推华为，向美巨头</a></li>
+
+                <li class="tag t5"><a href="#">海康存储被曝虚假宣传，偷换闪存颗粒，还用西数回收料</a></li>
+
+                <li class="tag t6"><a href="#">IOS14泄密！苹果三大新品被看光光</a></li>
+
+                <li class="tag t7"><a href="#">中国企业在欧洲专利申请量高居第一名，凸显技术研发实力</a></li>
+
+                <li class="tag t8"><a href="#">如果木星成为一个恒星，会发生什么？</a></li>
+
+                <li class="tag t9"><a href="#">美军要用集装箱发射无人机，商船直接变军舰</a></li>
+
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
